@@ -142,7 +142,7 @@ apt-get remove //卸载指定的软件包
 
 2. vim : Vim不需要费劲去按esc的几个方法。 -[ CSDN博客 ](https://blog.csdn.net/mangonova/article/details/51533741)
 
-# 5 驱动
+# 5 install
 ## Nvidia卡
 ```
 sudo apt-get upgrade
@@ -164,3 +164,5 @@ cd 桌面/
 
 sudo apt-get update
 ```
+## visual studio code
+到微软的vscode网站  （下载地址）https://code.visualstudio.com/Download，即可安装，可以使用（  命令行输入code .  在任何目录中打开该编辑器，只用deb安装的可以命令行打开，其他不行） 推荐使用这种方法，bug最少，启动最方便
