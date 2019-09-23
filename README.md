@@ -141,3 +141,26 @@ apt-get remove //卸载指定的软件包
 
 
 2. vim : Vim不需要费劲去按esc的几个方法。 -[ CSDN博客 ](https://blog.csdn.net/mangonova/article/details/51533741)
+
+# 5 驱动
+## Nvidia卡
+```
+sudo apt-get upgrade
+#for case1: original driver installed by apt-get:
+
+sudo apt-get remove --purge nvidia*
+#for case2: original driver installed by runfile:
+
+ sudo update-initramfs -u
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+
+sudo apt-get install nvidia-418
+sudo apt-get install mesa-common-dev 
+ sudo apt-get update
+
+sudo apt-get upgrade
+cd 桌面/
+
+sudo apt-get update
+```
