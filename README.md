@@ -166,3 +166,10 @@ sudo apt-get update
 ```
 ## visual studio code
 到微软的vscode网站  （下载地址）https://code.visualstudio.com/Download，即可安装，可以使用（  命令行输入code .  在任何目录中打开该编辑器，只用deb安装的可以命令行打开，其他不行） 推荐使用这种方法，bug最少，启动最方便
+
+# bug
+检测到系统程序问题
+```
+sudo gedit /etc/default/apport
+```
+将enabled = 1 修改为 0
