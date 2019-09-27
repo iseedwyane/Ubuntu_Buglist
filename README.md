@@ -11,6 +11,11 @@ sudo apt-get upgrade
 ```
 这个命令，会把本地已安装的软件，与刚下载的软件列表里对应软件进行对比，如果发现已安装的软件版本太低，就会提示你更新。
 ```
+apt-get dist-upgrade
+```
+这里提一下apt-get upgrade 与apt-get dist-upgrade的关系
+由于包与包之间存在各种依赖关系。upgrade只是简单的更新包，不管这些依赖，它不和添加包，或是删除包。而dist-upgrade可以根据依赖关系的变化，添加包，删除包
+```
 清屏  $ clear
 ```
 [install ubuntu]:(http://wiki.ros.org/kinetic/Installation/Ubuntu)
